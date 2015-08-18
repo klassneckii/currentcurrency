@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0321C4024C84C73E8A558A0B /* libPods-CurrentCurrency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */; };
+		82BCA0D71B3B00AD0025FA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0D61B3B00AD0025FA71 /* main.m */; };
+		82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0D91B3B00AD0025FA71 /* AppDelegate.m */; };
+		82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0DC1B3B00AD0025FA71 /* ViewController.m */; };
+		82BCA0E01B3B00AD0025FA71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BCA0DE1B3B00AD0025FA71 /* Main.storyboard */; };
+		82BCA0E21B3B00AD0025FA71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BCA0E11B3B00AD0025FA71 /* Images.xcassets */; };
+		82BCA0E51B3B00AD0025FA71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BCA0E31B3B00AD0025FA71 /* LaunchScreen.xib */; };
+		82BCA0F11B3B00AE0025FA71 /* CurrentCurrencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0F01B3B00AE0025FA71 /* CurrentCurrencyTests.m */; };
+		82BCA0FE1B3C18E10025FA71 /* MyCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0FD1B3C18E10025FA71 /* MyCurrency.m */; };
+		82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA1021B3C2EF60025FA71 /* RKXMLReaderSerialization.m */; };
+		82BCA1061B3C2F050025FA71 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA1051B3C2F050025FA71 /* XMLReader.m */; };
+		82BCA10B1B3C2F970025FA71 /* dmMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA1081B3C2F970025FA71 /* dmMappingProvider.m */; };
+		82BCA10C1B3C2F970025FA71 /* dmObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA10A1B3C2F970025FA71 /* dmObjectManager.m */; };
+		82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA10E1B3C31960025FA71 /* KovalutResponse.m */; };
+		82BCA1131B3C33B20025FA71 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA1121B3C33B20025FA71 /* Bank.m */; };
+		82EC950B1B3D2E0F00926F93 /* AddMyCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82BCA0EB1B3B00AE0025FA71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82BCA0C91B3B00AD0025FA71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82BCA0D01B3B00AD0025FA71;
+			remoteInfo = CurrentCurrency;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		753BCBF896D6E2E6F97ED3F2 /* Pods-CurrentCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentCurrency.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency.release.xcconfig"; sourceTree = "<group>"; };
+		82BCA0D11B3B00AD0025FA71 /* CurrentCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BCA0D51B3B00AD0025FA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82BCA0D61B3B00AD0025FA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82BCA0D81B3B00AD0025FA71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82BCA0D91B3B00AD0025FA71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82BCA0DB1B3B00AD0025FA71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82BCA0DC1B3B00AD0025FA71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82BCA0DF1B3B00AD0025FA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82BCA0E11B3B00AD0025FA71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82BCA0E41B3B00AD0025FA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		82BCA0EA1B3B00AE0025FA71 /* CurrentCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrentCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BCA0EF1B3B00AE0025FA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82BCA0F01B3B00AE0025FA71 /* CurrentCurrencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentCurrencyTests.m; sourceTree = "<group>"; };
+		82BCA0FC1B3C18E10025FA71 /* MyCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCurrency.h; sourceTree = "<group>"; };
+		82BCA0FD1B3C18E10025FA71 /* MyCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCurrency.m; sourceTree = "<group>"; };
+		82BCA1011B3C2EF60025FA71 /* RKXMLReaderSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKXMLReaderSerialization.h; sourceTree = "<group>"; };
+		82BCA1021B3C2EF60025FA71 /* RKXMLReaderSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKXMLReaderSerialization.m; sourceTree = "<group>"; };
+		82BCA1041B3C2F050025FA71 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		82BCA1051B3C2F050025FA71 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		82BCA1071B3C2F970025FA71 /* dmMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmMappingProvider.h; sourceTree = "<group>"; };
+		82BCA1081B3C2F970025FA71 /* dmMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dmMappingProvider.m; sourceTree = "<group>"; };
+		82BCA1091B3C2F970025FA71 /* dmObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmObjectManager.h; sourceTree = "<group>"; };
+		82BCA10A1B3C2F970025FA71 /* dmObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dmObjectManager.m; sourceTree = "<group>"; };
+		82BCA10D1B3C31960025FA71 /* KovalutResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KovalutResponse.h; sourceTree = "<group>"; };
+		82BCA10E1B3C31960025FA71 /* KovalutResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KovalutResponse.m; sourceTree = "<group>"; };
+		82BCA1111B3C33B20025FA71 /* Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
+		82BCA1121B3C33B20025FA71 /* Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bank.m; sourceTree = "<group>"; };
+		82EC95091B3D2E0F00926F93 /* AddMyCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyCurrencyViewController.h; sourceTree = "<group>"; };
+		82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMyCurrencyViewController.m; sourceTree = "<group>"; };
+		DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurrentCurrency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2C69F595C6F38DE671DF8D /* Pods-CurrentCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentCurrency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82BCA0CE1B3B00AD0025FA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0321C4024C84C73E8A558A0B /* libPods-CurrentCurrency.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BCA0E71B3B00AE0025FA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FFA7612C70AF87E712F72FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82BCA0C81B3B00AD0025FA71 = {
+			isa = PBXGroup;
+			children = (
+				82BCA0D31B3B00AD0025FA71 /* CurrentCurrency */,
+				82BCA0ED1B3B00AE0025FA71 /* CurrentCurrencyTests */,
+				82BCA0D21B3B00AD0025FA71 /* Products */,
+				E20873E242E442453A6224A5 /* Pods */,
+				7FFA7612C70AF87E712F72FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82BCA0D21B3B00AD0025FA71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA0D11B3B00AD0025FA71 /* CurrentCurrency.app */,
+				82BCA0EA1B3B00AE0025FA71 /* CurrentCurrencyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82BCA0D31B3B00AD0025FA71 /* CurrentCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				82EC95081B3D2DE900926F93 /* Controllers */,
+				82BCA0FF1B3C2EC40025FA71 /* Restkit */,
+				82BCA0FB1B3C18720025FA71 /* Model */,
+				82BCA0D81B3B00AD0025FA71 /* AppDelegate.h */,
+				82BCA0D91B3B00AD0025FA71 /* AppDelegate.m */,
+				82BCA0DB1B3B00AD0025FA71 /* ViewController.h */,
+				82BCA0DC1B3B00AD0025FA71 /* ViewController.m */,
+				82BCA0DE1B3B00AD0025FA71 /* Main.storyboard */,
+				82BCA0E11B3B00AD0025FA71 /* Images.xcassets */,
+				82BCA0E31B3B00AD0025FA71 /* LaunchScreen.xib */,
+				82BCA0D41B3B00AD0025FA71 /* Supporting Files */,
+			);
+			path = CurrentCurrency;
+			sourceTree = "<group>";
+		};
+		82BCA0D41B3B00AD0025FA71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA0D51B3B00AD0025FA71 /* Info.plist */,
+				82BCA0D61B3B00AD0025FA71 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82BCA0ED1B3B00AE0025FA71 /* CurrentCurrencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA0F01B3B00AE0025FA71 /* CurrentCurrencyTests.m */,
+				82BCA0EE1B3B00AE0025FA71 /* Supporting Files */,
+			);
+			path = CurrentCurrencyTests;
+			sourceTree = "<group>";
+		};
+		82BCA0EE1B3B00AE0025FA71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA0EF1B3B00AE0025FA71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82BCA0FB1B3C18720025FA71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA1101B3C319B0025FA71 /* Kovalut */,
+				82BCA0FC1B3C18E10025FA71 /* MyCurrency.h */,
+				82BCA0FD1B3C18E10025FA71 /* MyCurrency.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82BCA0FF1B3C2EC40025FA71 /* Restkit */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA1001B3C2ED30025FA71 /* XML */,
+				82BCA1071B3C2F970025FA71 /* dmMappingProvider.h */,
+				82BCA1081B3C2F970025FA71 /* dmMappingProvider.m */,
+				82BCA1091B3C2F970025FA71 /* dmObjectManager.h */,
+				82BCA10A1B3C2F970025FA71 /* dmObjectManager.m */,
+			);
+			name = Restkit;
+			sourceTree = "<group>";
+		};
+		82BCA1001B3C2ED30025FA71 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA1041B3C2F050025FA71 /* XMLReader.h */,
+				82BCA1051B3C2F050025FA71 /* XMLReader.m */,
+				82BCA1011B3C2EF60025FA71 /* RKXMLReaderSerialization.h */,
+				82BCA1021B3C2EF60025FA71 /* RKXMLReaderSerialization.m */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		82BCA1101B3C319B0025FA71 /* Kovalut */ = {
+			isa = PBXGroup;
+			children = (
+				82BCA10D1B3C31960025FA71 /* KovalutResponse.h */,
+				82BCA10E1B3C31960025FA71 /* KovalutResponse.m */,
+				82BCA1111B3C33B20025FA71 /* Bank.h */,
+				82BCA1121B3C33B20025FA71 /* Bank.m */,
+			);
+			name = Kovalut;
+			sourceTree = "<group>";
+		};
+		82EC95081B3D2DE900926F93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82EC95091B3D2E0F00926F93 /* AddMyCurrencyViewController.h */,
+				82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E20873E242E442453A6224A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C69F595C6F38DE671DF8D /* Pods-CurrentCurrency.debug.xcconfig */,
+				753BCBF896D6E2E6F97ED3F2 /* Pods-CurrentCurrency.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82BCA0D01B3B00AD0025FA71 /* CurrentCurrency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BCA0F41B3B00AE0025FA71 /* Build configuration list for PBXNativeTarget "CurrentCurrency" */;
+			buildPhases = (
+				8930DB159A1999B65E01FBA9 /* Check Pods Manifest.lock */,
+				82BCA0CD1B3B00AD0025FA71 /* Sources */,
+				82BCA0CE1B3B00AD0025FA71 /* Frameworks */,
+				82BCA0CF1B3B00AD0025FA71 /* Resources */,
+				FAEF185CA2E1B79C28B72EEC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrentCurrency;
+			productName = CurrentCurrency;
+			productReference = 82BCA0D11B3B00AD0025FA71 /* CurrentCurrency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82BCA0E91B3B00AE0025FA71 /* CurrentCurrencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BCA0F71B3B00AE0025FA71 /* Build configuration list for PBXNativeTarget "CurrentCurrencyTests" */;
+			buildPhases = (
+				82BCA0E61B3B00AE0025FA71 /* Sources */,
+				82BCA0E71B3B00AE0025FA71 /* Frameworks */,
+				82BCA0E81B3B00AE0025FA71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82BCA0EC1B3B00AE0025FA71 /* PBXTargetDependency */,
+			);
+			name = CurrentCurrencyTests;
+			productName = CurrentCurrencyTests;
+			productReference = 82BCA0EA1B3B00AE0025FA71 /* CurrentCurrencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82BCA0C91B3B00AD0025FA71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Dmitrii;
+				TargetAttributes = {
+					82BCA0D01B3B00AD0025FA71 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					82BCA0E91B3B00AE0025FA71 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 82BCA0D01B3B00AD0025FA71;
+					};
+				};
+			};
+			buildConfigurationList = 82BCA0CC1B3B00AD0025FA71 /* Build configuration list for PBXProject "CurrentCurrency" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82BCA0C81B3B00AD0025FA71;
+			productRefGroup = 82BCA0D21B3B00AD0025FA71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82BCA0D01B3B00AD0025FA71 /* CurrentCurrency */,
+				82BCA0E91B3B00AE0025FA71 /* CurrentCurrencyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82BCA0CF1B3B00AD0025FA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BCA0E01B3B00AD0025FA71 /* Main.storyboard in Resources */,
+				82BCA0E51B3B00AD0025FA71 /* LaunchScreen.xib in Resources */,
+				82BCA0E21B3B00AD0025FA71 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BCA0E81B3B00AE0025FA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8930DB159A1999B65E01FBA9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEF185CA2E1B79C28B72EEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82BCA0CD1B3B00AD0025FA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EC950B1B3D2E0F00926F93 /* AddMyCurrencyViewController.m in Sources */,
+				82BCA10B1B3C2F970025FA71 /* dmMappingProvider.m in Sources */,
+				82BCA0FE1B3C18E10025FA71 /* MyCurrency.m in Sources */,
+				82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */,
+				82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */,
+				82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */,
+				82BCA1131B3C33B20025FA71 /* Bank.m in Sources */,
+				82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */,
+				82BCA1061B3C2F050025FA71 /* XMLReader.m in Sources */,
+				82BCA0D71B3B00AD0025FA71 /* main.m in Sources */,
+				82BCA10C1B3C2F970025FA71 /* dmObjectManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BCA0E61B3B00AE0025FA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BCA0F11B3B00AE0025FA71 /* CurrentCurrencyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82BCA0EC1B3B00AE0025FA71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82BCA0D01B3B00AD0025FA71 /* CurrentCurrency */;
+			targetProxy = 82BCA0EB1B3B00AE0025FA71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82BCA0DE1B3B00AD0025FA71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82BCA0DF1B3B00AD0025FA71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82BCA0E31B3B00AD0025FA71 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82BCA0E41B3B00AD0025FA71 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82BCA0F21B3B00AE0025FA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82BCA0F31B3B00AE0025FA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82BCA0F51B3B00AE0025FA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2C69F595C6F38DE671DF8D /* Pods-CurrentCurrency.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CurrentCurrency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82BCA0F61B3B00AE0025FA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753BCBF896D6E2E6F97ED3F2 /* Pods-CurrentCurrency.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CurrentCurrency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		82BCA0F81B3B00AE0025FA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrentCurrencyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrentCurrency.app/CurrentCurrency";
+			};
+			name = Debug;
+		};
+		82BCA0F91B3B00AE0025FA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrentCurrencyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrentCurrency.app/CurrentCurrency";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82BCA0CC1B3B00AD0025FA71 /* Build configuration list for PBXProject "CurrentCurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BCA0F21B3B00AE0025FA71 /* Debug */,
+				82BCA0F31B3B00AE0025FA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82BCA0F41B3B00AE0025FA71 /* Build configuration list for PBXNativeTarget "CurrentCurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BCA0F51B3B00AE0025FA71 /* Debug */,
+				82BCA0F61B3B00AE0025FA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82BCA0F71B3B00AE0025FA71 /* Build configuration list for PBXNativeTarget "CurrentCurrencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BCA0F81B3B00AE0025FA71 /* Debug */,
+				82BCA0F91B3B00AE0025FA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82BCA0C91B3B00AD0025FA71 /* Project object */;
+}
