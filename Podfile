@@ -3,11 +3,12 @@
 
 target 'CurrentCurrency' do
 
+pod 'Realm'
+pod 'ReactiveCocoa'
+
 pod 'CBZSplashView', '~> 1.0.0'
 pod 'RestKit'
-pod 'PPiFlatSegmentedControl'
-pod 'PPiAwesomeButton'
-pod 'FontAwesome+iOS'
+
 pod 'DateTools'
 pod 'ChameleonFramework'
 pod 'BKMoneyKit'

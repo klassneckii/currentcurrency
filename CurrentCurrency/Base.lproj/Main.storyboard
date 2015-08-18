@@ -27,13 +27,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Приобретено" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVh-FY-7H9">
                                 <rect key="frame" x="16" y="124" width="145" height="44"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Стоимость" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-ue-0pt">
                                 <rect key="frame" x="16" y="176" width="145" height="44"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-5e-iqP" customClass="BKCurrencyTextField">
@@ -78,7 +78,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0O-cW-P5J">
-                                                    <rect key="frame" x="8" y="0.0" width="120" height="43.5"/>
+                                                    <rect key="frame" x="8" y="0.0" width="120" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43.5" id="nd6-LG-XfN"/>
                                                         <constraint firstAttribute="width" constant="120" id="vaH-ux-SZj"/>
@@ -88,7 +88,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GjE-nN-RZ4" customClass="BKCurrencyTextField">
-                                                    <rect key="frame" x="149" y="0.0" width="443" height="43.5"/>
+                                                    <rect key="frame" x="149" y="0.0" width="443" height="44"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43.5" id="SiE-ua-iaW"/>
@@ -114,7 +114,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTt-bR-85s">
-                                                    <rect key="frame" x="8" y="0.0" width="120" height="43.5"/>
+                                                    <rect key="frame" x="8" y="0.0" width="120" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="T6t-5o-kyC"/>
                                                         <constraint firstAttribute="height" constant="43.5" id="yiE-5a-Lhm"/>
@@ -124,7 +124,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-9g-OQP" customClass="BKCurrencyTextField">
-                                                    <rect key="frame" x="149" y="0.0" width="451" height="43.5"/>
+                                                    <rect key="frame" x="149" y="0.0" width="451" height="44"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="43.5" id="ms9-OF-T40"/>
