@@ -10,7 +10,7 @@
 
 @implementation KLRate
 
-- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(NSNumber *)sellRate buyRate:(NSNumber *)buyRate {
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate {
     self = [super init];
     if (self) {
         self.sourceCurrency = sourceCurrency;
@@ -20,5 +20,19 @@
     }
     return self;
 }
+
+// Specify default values for properties
+
+//+ (NSDictionary *)defaultPropertyValues
+//{
+//    return @{};
+//}
+
+// Specify properties to ignore (Realm won't persist these)
+
+//+ (NSArray *)ignoredProperties
+//{
+//    return @[];
+//}
 
 @end

@@ -7,18 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm.h>
 
-@interface KLRate : NSObject
+@interface KLRate : RLMObject
 
 @property (nonatomic) NSString *sourceCurrency;
 @property (nonatomic) NSString *destinationCurrency;
-@property (nonatomic) NSNumber *sellRate;
-@property (nonatomic) NSNumber *buyRate;
-//@property (nonatomic) 
+@property (nonatomic) double sellRate;
+@property (nonatomic) double buyRate;
 
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
                         dstCurrency:(NSString *)destinationCurrency
-                           sellRate:(NSNumber *)sellRate
-                            buyRate:(NSNumber *)buyRate;
+                           sellRate:(double)sellRate
+                            buyRate:(double)buyRate;
+
+
 
 @end
+
+// This protocol enables typed collections. i.e.:
+// RLMArray<MyCurrencyRealm>
+RLM_ARRAY_TYPE(KLRate)

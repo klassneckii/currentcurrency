@@ -14,9 +14,13 @@
 #import <BKMoneyKit/BKMoneyUtils.h>
 #import <BKForwardingTextField.h>
 
-#import "KLBankRate.h"
 #import "CurrencyConstants.h"
 #include "Bank.h"
+
+#import "KLRate.h"
+#import "MyCurrencyRealm.h"
+#import <Realm.h>
+
 
 @interface ViewController ()
 
@@ -48,8 +52,8 @@
 //    self.currencyAmountTextfield.numberFormatter.currencySymbol = @"$";
     
     [[dmObjectManager sharedManager] fetchBanksWithSuccess:^(NSArray *banks) {
-        NSArray *rate = [self prettyRatesFrom:banks];
-        [rate count];
+//        NSArray *rate = [self prettyRatesFrom:banks];
+//        [rate count];
     } andFailure:^(NSError *error) {
         
     }];
@@ -62,35 +66,40 @@
     NSLog(@"Country Code : %@", [NSString stringWithFormat:@"%@",[locale displayNameForKey:NSLocaleCountryCode value:currencyCode]]);
 //    NSLog(@"Currency Symbol : %@", currencySymbol);
     
-   
+    
+    MyCurrencyRealm *currency = [[MyCurrencyRealm alloc] initWithAmount:150.0
+                                                                   rate:[[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
+                                                                                                dstCurrency:kAECurrencyEUR
+                                                                                                   sellRate:66.5
+                                                                                                    buyRate:66.7]];
+    [currency description];
 //    [bankRate description];
     
 }
 
-- (NSArray *)prettyRatesFrom:(NSArray *)horribleRates {
-    NSMutableArray *newRates = [NSMutableArray new];
-    
-    for (Bank *badRate in horribleRates) {
-        KLBankRate *rubUSDRate = [[KLBankRate alloc] initWithSrcCurrency:kAECurrencyRUB
-                                                           dstCurrency:kAECurrencyUSD
-                                                              sellRate:badRate.usdSell
-                                                               buyRate:badRate.usdBuy
-                                                                  bank:[[KLBank alloc] initWithName:badRate.name]
-                                                         andChangeTime:badRate.changeTime];
-        [newRates addObject:rubUSDRate];
-        
-        KLBankRate *rubEURRate = [[KLBankRate alloc] initWithSrcCurrency:kAECurrencyRUB
-                                                           dstCurrency:kAECurrencyEUR
-                                                                sellRate:badRate.euroSell
-                                                               buyRate:badRate.euroBuy
-                                                                  bank:[[KLBank alloc] initWithName:badRate.name]
-                                                         andChangeTime:badRate.changeTime];
-        [newRates addObject:rubEURRate];
-    }
-    
-    
-    return [newRates mutableCopy];
-}
+//- (NSArray *)prettyRatesFrom:(NSArray *)horribleRates {
+//    NSMutableArray *newRates = [NSMutableArray new];
+//    
+//    for (Bank *badRate in horribleRates) {
+//        KLBankRate *rubUSDRate = [[KLBankRate alloc] initWithSrcCurrency:kAECurrencyRUB
+//                                                             dstCurrency:kAECurrencyUSD
+//                                                                sellRate:badRate.usdSell
+//                                                                 buyRate:badRate.usdBuy
+//                                                                    bank:[[KLBank alloc] initWithName:badRate.name]
+//                                                           andChangeTime:badRate.changeTime];
+//        [newRates addObject:rubUSDRate];
+//        
+//        KLBankRate *rubEURRate = [[KLBankRate alloc] initWithSrcCurrency:kAECurrencyRUB
+//                                                             dstCurrency:kAECurrencyEUR
+//                                                                sellRate:badRate.euroSell
+//                                                                 buyRate:badRate.euroBuy
+//                                                                    bank:[[KLBank alloc] initWithName:badRate.name]
+//                                                           andChangeTime:badRate.changeTime];
+//        [newRates addObject:rubEURRate];
+//    }
+//    
+//    return [newRates mutableCopy];
+//}
 
 - (void)viewDidAppear:(BOOL)animated
 {

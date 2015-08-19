@@ -22,10 +22,9 @@
 		82BCA10C1B3C2F970025FA71 /* dmObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA10A1B3C2F970025FA71 /* dmObjectManager.m */; };
 		82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA10E1B3C31960025FA71 /* KovalutResponse.m */; };
 		82BCA1131B3C33B20025FA71 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA1121B3C33B20025FA71 /* Bank.m */; };
-		82CF9A891B836D0400FF406D /* CurrencyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A881B836D0400FF406D /* CurrencyOperation.m */; };
 		82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A8B1B836D9300FF406D /* KLRate.m */; };
 		82CF9A8F1B836DFC00FF406D /* KLBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A8E1B836DFC00FF406D /* KLBank.m */; };
-		82CF9A931B836F7B00FF406D /* KLBankRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A921B836F7B00FF406D /* KLBankRate.m */; };
+		82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */; };
 		82EC950B1B3D2E0F00926F93 /* AddMyCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,15 +67,13 @@
 		82BCA10E1B3C31960025FA71 /* KovalutResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KovalutResponse.m; sourceTree = "<group>"; };
 		82BCA1111B3C33B20025FA71 /* Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
 		82BCA1121B3C33B20025FA71 /* Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bank.m; sourceTree = "<group>"; };
-		82CF9A871B836D0400FF406D /* CurrencyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyOperation.h; sourceTree = "<group>"; };
-		82CF9A881B836D0400FF406D /* CurrencyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyOperation.m; sourceTree = "<group>"; };
 		82CF9A8A1B836D9300FF406D /* KLRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRate.h; sourceTree = "<group>"; };
 		82CF9A8B1B836D9300FF406D /* KLRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLRate.m; sourceTree = "<group>"; };
 		82CF9A8D1B836DFC00FF406D /* KLBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBank.h; sourceTree = "<group>"; };
 		82CF9A8E1B836DFC00FF406D /* KLBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBank.m; sourceTree = "<group>"; };
-		82CF9A911B836F7B00FF406D /* KLBankRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBankRate.h; sourceTree = "<group>"; };
-		82CF9A921B836F7B00FF406D /* KLBankRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBankRate.m; sourceTree = "<group>"; };
 		82CF9A941B837AE100FF406D /* CurrencyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyConstants.h; sourceTree = "<group>"; };
+		82CF9A951B84C45600FF406D /* MyCurrencyRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCurrencyRealm.h; sourceTree = "<group>"; };
+		82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCurrencyRealm.m; sourceTree = "<group>"; };
 		82EC95091B3D2E0F00926F93 /* AddMyCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyCurrencyViewController.h; sourceTree = "<group>"; };
 		82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMyCurrencyViewController.m; sourceTree = "<group>"; };
 		DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurrentCurrency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,8 +179,8 @@
 				82BCA1101B3C319B0025FA71 /* Kovalut */,
 				82BCA0FC1B3C18E10025FA71 /* MyCurrency.h */,
 				82BCA0FD1B3C18E10025FA71 /* MyCurrency.m */,
-				82CF9A871B836D0400FF406D /* CurrencyOperation.h */,
-				82CF9A881B836D0400FF406D /* CurrencyOperation.m */,
+				82CF9A951B84C45600FF406D /* MyCurrencyRealm.h */,
+				82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */,
 				82CF9A8D1B836DFC00FF406D /* KLBank.h */,
 				82CF9A8E1B836DFC00FF406D /* KLBank.m */,
 			);
@@ -229,8 +226,6 @@
 			children = (
 				82CF9A8A1B836D9300FF406D /* KLRate.h */,
 				82CF9A8B1B836D9300FF406D /* KLRate.m */,
-				82CF9A911B836F7B00FF406D /* KLBankRate.h */,
-				82CF9A921B836F7B00FF406D /* KLBankRate.m */,
 			);
 			name = Rate;
 			sourceTree = "<group>";
@@ -394,14 +389,13 @@
 				82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */,
 				82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */,
 				82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */,
-				82CF9A891B836D0400FF406D /* CurrencyOperation.m in Sources */,
 				82BCA1131B3C33B20025FA71 /* Bank.m in Sources */,
 				82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */,
 				82BCA1061B3C2F050025FA71 /* XMLReader.m in Sources */,
 				82BCA0D71B3B00AD0025FA71 /* main.m in Sources */,
 				82BCA10C1B3C2F970025FA71 /* dmObjectManager.m in Sources */,
-				82CF9A931B836F7B00FF406D /* KLBankRate.m in Sources */,
 				82CF9A8F1B836DFC00FF406D /* KLBank.m in Sources */,
+				82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */,
 				82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
