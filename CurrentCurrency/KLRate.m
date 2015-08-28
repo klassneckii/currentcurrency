@@ -13,10 +13,20 @@
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate {
     self = [super init];
     if (self) {
+        self.identifier = [[NSUUID UUID] UUIDString];
         self.sourceCurrency = sourceCurrency;
         self.destinationCurrency = destinationCurrency;
         self.sellRate = sellRate;
         self.buyRate = buyRate;
+        self.bank = [[KLBank alloc] initWithName:@"USER_RATE"];
+    }
+    return self;
+}
+
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate bank:(KLBank *)bank {
+    self = [self initWithSrcCurrency:sourceCurrency dstCurrency:destinationCurrency sellRate:sellRate buyRate:buyRate];
+    if (self) {
+        self.bank = bank;
     }
     return self;
 }

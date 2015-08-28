@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <Realm.h>
 
-@interface KLBank : NSObject
+@interface KLBank : RLMObject
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *address;

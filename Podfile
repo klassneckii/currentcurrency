@@ -15,6 +15,8 @@ pod 'BKMoneyKit'
 pod 'IQKeyboardManager'
 pod 'UITextField+Shake'
 
+pod "MYSForms"
+
 end
 
 target 'CurrentCurrencyTests' do

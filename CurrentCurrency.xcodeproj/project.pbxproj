@@ -25,7 +25,8 @@
 		82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A8B1B836D9300FF406D /* KLRate.m */; };
 		82CF9A8F1B836DFC00FF406D /* KLBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A8E1B836DFC00FF406D /* KLBank.m */; };
 		82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */; };
-		82EC950B1B3D2E0F00926F93 /* AddMyCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */; };
+		82CF9A9A1B8CA40600FF406D /* AddCurrencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */; };
+		82CF9A9C1B8CAD3700FF406D /* CurrencyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,9 @@
 		82CF9A941B837AE100FF406D /* CurrencyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyConstants.h; sourceTree = "<group>"; };
 		82CF9A951B84C45600FF406D /* MyCurrencyRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCurrencyRealm.h; sourceTree = "<group>"; };
 		82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCurrencyRealm.m; sourceTree = "<group>"; };
-		82EC95091B3D2E0F00926F93 /* AddMyCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMyCurrencyViewController.h; sourceTree = "<group>"; };
-		82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMyCurrencyViewController.m; sourceTree = "<group>"; };
+		82CF9A981B8CA40600FF406D /* AddCurrencyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCurrencyTableViewController.h; sourceTree = "<group>"; };
+		82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCurrencyTableViewController.m; sourceTree = "<group>"; };
+		82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConstants.m; sourceTree = "<group>"; };
 		DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurrentCurrency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2C69F595C6F38DE671DF8D /* Pods-CurrentCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentCurrency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				82BCA0E31B3B00AD0025FA71 /* LaunchScreen.xib */,
 				82BCA0D41B3B00AD0025FA71 /* Supporting Files */,
 				82CF9A941B837AE100FF406D /* CurrencyConstants.h */,
+				82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */,
 			);
 			path = CurrentCurrency;
 			sourceTree = "<group>";
@@ -233,8 +236,8 @@
 		82EC95081B3D2DE900926F93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				82EC95091B3D2E0F00926F93 /* AddMyCurrencyViewController.h */,
-				82EC950A1B3D2E0F00926F93 /* AddMyCurrencyViewController.m */,
+				82CF9A981B8CA40600FF406D /* AddCurrencyTableViewController.h */,
+				82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -383,11 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82EC950B1B3D2E0F00926F93 /* AddMyCurrencyViewController.m in Sources */,
+				82CF9A9C1B8CAD3700FF406D /* CurrencyConstants.m in Sources */,
 				82BCA10B1B3C2F970025FA71 /* dmMappingProvider.m in Sources */,
 				82BCA0FE1B3C18E10025FA71 /* MyCurrency.m in Sources */,
 				82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */,
 				82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */,
+				82CF9A9A1B8CA40600FF406D /* AddCurrencyTableViewController.m in Sources */,
 				82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */,
 				82BCA1131B3C33B20025FA71 /* Bank.m in Sources */,
 				82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */,

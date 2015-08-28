@@ -19,17 +19,16 @@
     }
     return self;
 }
-// Specify default values for properties
 
-//+ (NSDictionary *)defaultPropertyValues
-//{
-//    return @{};
-//}
++ (NSDictionary *)defaultPropertyValues {
+    return @{
+             @"identifier" : [[NSUUID UUID] UUIDString]
+             };
+}
 
 // Specify properties to ignore (Realm won't persist these)
 
-//+ (NSArray *)ignoredProperties
-//{
+//+ (NSArray *)ignoredProperties {
 //    return @[];
 //}
 

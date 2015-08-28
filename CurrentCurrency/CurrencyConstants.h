@@ -35,4 +35,11 @@ static NSString * const kAECurrencyZAR = @"ZAR";
 static NSString * const kAECurrencySAR = @"SAR";
 static NSString * const kAECurrencyAED = @"AED";
 
+
 #endif
+
+@interface CurrencyConstants : NSObject
+
++ (NSArray *)countryCurrencies;
+
+@end

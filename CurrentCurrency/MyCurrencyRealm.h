@@ -11,6 +11,7 @@
 
 @interface MyCurrencyRealm : RLMObject
 
+@property (nonatomic) NSString *identifier;
 @property (nonatomic) double amount;
 @property (nonatomic) KLRate *rate;
 @property (nonatomic) NSDate *created;

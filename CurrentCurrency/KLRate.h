@@ -9,18 +9,28 @@
 #import <Foundation/Foundation.h>
 #import <Realm.h>
 
+#import "KLBank.h"
+
 @interface KLRate : RLMObject
 
-@property (nonatomic) NSString *sourceCurrency;
-@property (nonatomic) NSString *destinationCurrency;
-@property (nonatomic) double sellRate;
-@property (nonatomic) double buyRate;
+@property NSString *identifier;
+@property NSString *sourceCurrency;
+@property NSString *destinationCurrency;
+@property double sellRate;
+@property double buyRate;
+@property NSDate *updated;
+@property KLBank *bank;
 
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
                         dstCurrency:(NSString *)destinationCurrency
                            sellRate:(double)sellRate
                             buyRate:(double)buyRate;
 
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
+                        dstCurrency:(NSString *)destinationCurrency
+                           sellRate:(double)sellRate
+                            buyRate:(double)buyRate
+                               bank:(KLBank *)bank;
 
 
 @end

@@ -1,36 +1,31 @@
 //
-//  AddMyCurrencyViewController.m
+//  AddCurrencyTableViewController.m
 //  CurrentCurrency
 //
-//  Created by Dmitrii on 26.06.15.
+//  Created by Dmitrii on 25.08.15.
 //  Copyright (c) 2015 Dmitrii. All rights reserved.
 //
 
-#import "AddMyCurrencyViewController.h"
-#import <BKCurrencyTextField.h>
-#import <BKMoneyKit/BKMoneyUtils.h>
-#import <BKForwardingTextField.h>
+#import "AddCurrencyTableViewController.h"
+#import "CurrencyConstants.h"
 
 
-@interface AddMyCurrencyViewController ()
-@property (strong, nonatomic) IBOutlet BKCurrencyTextField *amountCurrencyTextfield;
+@interface AddCurrencyTableViewController ()
 
 @end
 
-@implementation AddMyCurrencyViewController
+@implementation AddCurrencyTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.amountCurrencyTextfield.numberFormatter.allowsFloats = NO;
-    [self.amountCurrencyTextfield.numberFormatter setMaximumFractionDigits:0];
-    self.amountCurrencyTextfield.placeholder = [self.amountCurrencyTextfield.numberFormatter stringFromNumber:@(0)];
-
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.tableView.tableFooterView = [UIView new];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,18 +34,18 @@
 }
 
 #pragma mark - Table view data source
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

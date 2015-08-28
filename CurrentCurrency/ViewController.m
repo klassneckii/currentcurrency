@@ -28,7 +28,6 @@
 @property (strong, nonatomic) IBOutlet BKCurrencyTextField *howMuchPayTextfield;
 
 @property (strong, nonatomic) IBOutlet BKCurrencyTextField *currencyAmountTextfield;
-@property (strong, nonatomic) IBOutlet UIView *currencyChoiceControl;
 
 @end
 
@@ -67,14 +66,6 @@
 //    NSLog(@"Currency Symbol : %@", currencySymbol);
     
     
-    MyCurrencyRealm *currency = [[MyCurrencyRealm alloc] initWithAmount:150.0
-                                                                   rate:[[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
-                                                                                                dstCurrency:kAECurrencyEUR
-                                                                                                   sellRate:66.5
-                                                                                                    buyRate:66.7]];
-    [currency description];
-//    [bankRate description];
-    
 }
 
 //- (NSArray *)prettyRatesFrom:(NSArray *)horribleRates {
@@ -100,15 +91,32 @@
 //    
 //    return [newRates mutableCopy];
 //}
+- (IBAction)addCurrency:(id)sender {
+    
+    MyCurrencyRealm *currency = [[MyCurrencyRealm alloc] initWithAmount:self.currencyAmountTextfield.numberValue.doubleValue
+                                                                   rate:[[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
+                                                                                                dstCurrency:kAECurrencyUSD
+                                                                                                   sellRate:self.howMuchPayTextfield.numberValue.doubleValue + 10
+                                                                                                    buyRate:self.howMuchPayTextfield.numberValue.doubleValue]];
+    
+    //    UITextField *textfield = [[UITextField alloc] init];
+    
+    [[RLMRealm defaultRealm] beginWriteTransaction];
+    [[RLMRealm defaultRealm] addObject:currency];
+    [[RLMRealm defaultRealm] commitWriteTransaction];
+    NSLog(@"%@", [[MyCurrencyRealm allObjects] description]);
+    
+    
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    /* wait a beat before animating in */
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.splashView startAnimation];
-    });
+//    /* wait a beat before animating in */
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.splashView startAnimation];
+//    });
 }
 
 - (void)didReceiveMemoryWarning {
