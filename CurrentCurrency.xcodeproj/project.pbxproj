@@ -27,6 +27,8 @@
 		82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */; };
 		82CF9A9A1B8CA40600FF406D /* AddCurrencyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */; };
 		82CF9A9C1B8CAD3700FF406D /* CurrencyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */; };
+		82CF9B0C1B94A6A300FF406D /* KLCurrencyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9B0B1B94A6A300FF406D /* KLCurrencyAPI.m */; };
+		82CF9B0F1B94AA3C00FF406D /* BestRatesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CF9B0E1B94AA3C00FF406D /* BestRatesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		82CF9A981B8CA40600FF406D /* AddCurrencyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCurrencyTableViewController.h; sourceTree = "<group>"; };
 		82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCurrencyTableViewController.m; sourceTree = "<group>"; };
 		82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConstants.m; sourceTree = "<group>"; };
+		82CF9B0A1B94A6A300FF406D /* KLCurrencyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCurrencyAPI.h; sourceTree = "<group>"; };
+		82CF9B0B1B94A6A300FF406D /* KLCurrencyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCurrencyAPI.m; sourceTree = "<group>"; };
+		82CF9B0D1B94AA3C00FF406D /* BestRatesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestRatesTableViewController.h; sourceTree = "<group>"; };
+		82CF9B0E1B94AA3C00FF406D /* BestRatesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestRatesTableViewController.m; sourceTree = "<group>"; };
 		DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurrentCurrency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2C69F595C6F38DE671DF8D /* Pods-CurrentCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentCurrency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +151,8 @@
 				82BCA0D41B3B00AD0025FA71 /* Supporting Files */,
 				82CF9A941B837AE100FF406D /* CurrencyConstants.h */,
 				82CF9A9B1B8CAD3700FF406D /* CurrencyConstants.m */,
+				82CF9B0A1B94A6A300FF406D /* KLCurrencyAPI.h */,
+				82CF9B0B1B94A6A300FF406D /* KLCurrencyAPI.m */,
 			);
 			path = CurrentCurrency;
 			sourceTree = "<group>";
@@ -238,6 +246,8 @@
 			children = (
 				82CF9A981B8CA40600FF406D /* AddCurrencyTableViewController.h */,
 				82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */,
+				82CF9B0D1B94AA3C00FF406D /* BestRatesTableViewController.h */,
+				82CF9B0E1B94AA3C00FF406D /* BestRatesTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -392,6 +402,7 @@
 				82BCA10F1B3C31960025FA71 /* KovalutResponse.m in Sources */,
 				82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */,
 				82CF9A9A1B8CA40600FF406D /* AddCurrencyTableViewController.m in Sources */,
+				82CF9B0C1B94A6A300FF406D /* KLCurrencyAPI.m in Sources */,
 				82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */,
 				82BCA1131B3C33B20025FA71 /* Bank.m in Sources */,
 				82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */,
@@ -400,6 +411,7 @@
 				82BCA10C1B3C2F970025FA71 /* dmObjectManager.m in Sources */,
 				82CF9A8F1B836DFC00FF406D /* KLBank.m in Sources */,
 				82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */,
+				82CF9B0F1B94AA3C00FF406D /* BestRatesTableViewController.m in Sources */,
 				82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
