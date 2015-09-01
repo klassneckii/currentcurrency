@@ -10,7 +10,7 @@
 
 @implementation KLRate
 
-- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate {
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate updated:(NSDate *)updateTime {
     self = [super init];
     if (self) {
         self.identifier = [[NSUUID UUID] UUIDString];
@@ -19,17 +19,22 @@
         self.sellRate = sellRate;
         self.buyRate = buyRate;
         self.bank = [[KLBank alloc] initWithName:@"USER_RATE"];
+        self.updated = updateTime;
     }
     return self;
 }
 
-- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate bank:(KLBank *)bank {
-    self = [self initWithSrcCurrency:sourceCurrency dstCurrency:destinationCurrency sellRate:sellRate buyRate:buyRate];
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate updated:(NSDate *)updateTime bank:(KLBank *)bank  {
+    self = [self initWithSrcCurrency:sourceCurrency dstCurrency:destinationCurrency sellRate:sellRate buyRate:buyRate updated:updateTime];
     if (self) {
         self.bank = bank;
     }
     return self;
 }
+
+//+ (NSString *)primaryKey {
+//    return @"bank";
+//}
 
 // Specify default values for properties
 

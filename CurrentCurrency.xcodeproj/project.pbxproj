@@ -192,8 +192,6 @@
 				82BCA0FD1B3C18E10025FA71 /* MyCurrency.m */,
 				82CF9A951B84C45600FF406D /* MyCurrencyRealm.h */,
 				82CF9A961B84C45600FF406D /* MyCurrencyRealm.m */,
-				82CF9A8D1B836DFC00FF406D /* KLBank.h */,
-				82CF9A8E1B836DFC00FF406D /* KLBank.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -235,6 +233,8 @@
 		82CF9A901B836F6400FF406D /* Rate */ = {
 			isa = PBXGroup;
 			children = (
+				82CF9A8D1B836DFC00FF406D /* KLBank.h */,
+				82CF9A8E1B836DFC00FF406D /* KLBank.m */,
 				82CF9A8A1B836D9300FF406D /* KLRate.h */,
 				82CF9A8B1B836D9300FF406D /* KLRate.m */,
 			);

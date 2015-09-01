@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import <Realm.h>
+
 @interface KLCurrencyAPI : NSObject
 
-- (void)fetchTodayRussianRatesWithCompletitionBlock:(void (^)(NSArray *rates, NSError *error))completitionBlock;
+- (void)fetchTodayRussianRatesWithCompletitionBlock:(void (^)(RLMResults *rates, NSError *error))completitionBlock;
 
 @end

@@ -18,4 +18,8 @@
     return self;
 }
 
+//+ (NSString *)primaryKey {
+//    return @"name";
+//}
+
 @end

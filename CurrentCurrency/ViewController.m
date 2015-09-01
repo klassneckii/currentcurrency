@@ -93,19 +93,19 @@
 //}
 - (IBAction)addCurrency:(id)sender {
     
-    MyCurrencyRealm *currency = [[MyCurrencyRealm alloc] initWithAmount:self.currencyAmountTextfield.numberValue.doubleValue
-                                                                   rate:[[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
-                                                                                                dstCurrency:kAECurrencyUSD
-                                                                                                   sellRate:self.howMuchPayTextfield.numberValue.doubleValue + 10
-                                                                                                    buyRate:self.howMuchPayTextfield.numberValue.doubleValue]];
-    
-    //    UITextField *textfield = [[UITextField alloc] init];
-    
-    [[RLMRealm defaultRealm] beginWriteTransaction];
-    [[RLMRealm defaultRealm] addObject:currency];
-    [[RLMRealm defaultRealm] commitWriteTransaction];
-    NSLog(@"%@", [[MyCurrencyRealm allObjects] description]);
-    
+//    MyCurrencyRealm *currency = [[MyCurrencyRealm alloc] initWithAmount:self.currencyAmountTextfield.numberValue.doubleValue
+//                                                                   rate:[[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
+//                                                                                                dstCurrency:kAECurrencyUSD
+//                                                                                                   sellRate:self.howMuchPayTextfield.numberValue.doubleValue + 10
+//                                                                                                    buyRate:self.howMuchPayTextfield.numberValue.doubleValue]];
+//    
+//    //    UITextField *textfield = [[UITextField alloc] init];
+//    
+//    [[RLMRealm defaultRealm] beginWriteTransaction];
+//    [[RLMRealm defaultRealm] addObject:currency];
+//    [[RLMRealm defaultRealm] commitWriteTransaction];
+//    NSLog(@"%@", [[MyCurrencyRealm allObjects] description]);
+//    
     
 }
 

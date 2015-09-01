@@ -19,7 +19,7 @@ static NSString *cellIdentifier = @"RateCell";
 
 @interface BestRatesTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray *rates;
+@property (nonatomic, strong) RLMResults *rates;
 
 @end
 
@@ -33,13 +33,16 @@ static NSString *cellIdentifier = @"RateCell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
     KLCurrencyAPI *api = [KLCurrencyAPI new];
-    [api fetchTodayRussianRatesWithCompletitionBlock:^(NSArray *rates, NSError *error) {
+    [api fetchTodayRussianRatesWithCompletitionBlock:^(RLMResults *rates, NSError *error) {
         if (error) {
             return;
         }
-        self.rates = [NSMutableArray arrayWithArray:rates];
+        self.rates = rates;
         [self.tableView reloadData];
     }];
 }
@@ -74,7 +77,7 @@ static NSString *cellIdentifier = @"RateCell";
     } else {
         currency = @"hz";
     }
-    
+
     cell.textLabel.text = [NSString stringWithFormat:@"%@ | %@", rate.bank.name, currency];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Продать: %.2f, Купить: %.2f", rate.sellRate, rate.buyRate];
     

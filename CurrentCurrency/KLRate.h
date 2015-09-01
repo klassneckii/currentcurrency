@@ -24,12 +24,14 @@
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
                         dstCurrency:(NSString *)destinationCurrency
                            sellRate:(double)sellRate
-                            buyRate:(double)buyRate;
+                            buyRate:(double)buyRate
+                            updated:(NSDate *)updateTime;
 
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
                         dstCurrency:(NSString *)destinationCurrency
                            sellRate:(double)sellRate
                             buyRate:(double)buyRate
+                            updated:(NSDate *)updateTime
                                bank:(KLBank *)bank;
 
 
