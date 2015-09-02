@@ -10,12 +10,20 @@
 
 @implementation MyCurrencyRealm
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.identifier = [[NSUUID UUID] UUIDString];
+        self.created = [NSDate new];
+    }
+    return self;
+}
+
 - (instancetype)initWithAmount:(double)amount rate:(KLRate *)rate {
     self = [super init];
     if (self) {
         self.amount = amount;
         self.rate = rate;
-        self.created = [NSDate new];
     }
     return self;
 }

@@ -9,7 +9,7 @@
         <scene sceneID="CzD-5D-YIH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="74U-nF-vAU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Мои операции" id="ioC-Dj-O7Q"/>
+                    <tabBarItem key="tabBarItem" title="Мои операции" image="TabBarOperations" id="ioC-Dj-O7Q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8mA-z1-hPd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -24,19 +24,33 @@
             </objects>
             <point key="canvasLocation" x="604" y="-737"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Мои операции-->
         <scene sceneID="EnK-F1-bDK">
             <objects>
-                <tableViewController id="Ap3-yR-47S" sceneMemberID="viewController">
+                <tableViewController id="Ap3-yR-47S" customClass="MyOperationsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FZg-tw-M20">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kw0-fX-VCz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OperationCell" textLabel="AdW-9Z-Buw" detailTextLabel="mxJ-Co-wKz" style="IBUITableViewCellStyleSubtitle" id="kw0-fX-VCz">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kw0-fX-VCz" id="2U8-Iz-y0b">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AdW-9Z-Buw">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mxJ-Co-wKz">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -45,7 +59,7 @@
                             <outlet property="delegate" destination="Ap3-yR-47S" id="0kw-wj-yIt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="urw-ia-alp">
+                    <navigationItem key="navigationItem" title="Мои операции" id="urw-ia-alp">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8cn-sA-BjM">
                             <connections>
                                 <segue destination="2lJ-ir-jkB" kind="show" id="6bq-qJ-DcY"/>
@@ -57,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="1325" y="-737"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Add Operation Form View Controller-->
         <scene sceneID="saS-Jg-Gvt">
             <objects>
-                <collectionViewController id="2lJ-ir-jkB" sceneMemberID="viewController">
+                <collectionViewController id="2lJ-ir-jkB" customClass="AddOperationFormViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9HN-Dx-fgl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +169,7 @@
         <scene sceneID="1FZ-Le-5oZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IU0-fe-xLU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Где обмен?" id="sey-29-10v"/>
+                    <tabBarItem key="tabBarItem" title="Где обмен?" image="TabBarWhereExchange" id="sey-29-10v"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vHX-IK-xen">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -171,4 +185,8 @@
             <point key="canvasLocation" x="604" y="-12"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabBarOperations" width="25" height="25"/>
+        <image name="TabBarWhereExchange" width="25" height="25"/>
+    </resources>
 </document>

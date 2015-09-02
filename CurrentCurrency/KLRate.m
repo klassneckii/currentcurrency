@@ -10,10 +10,19 @@
 
 @implementation KLRate
 
-- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate updated:(NSDate *)updateTime {
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.identifier = [[NSUUID UUID] UUIDString];
+        self.updated = [NSDate new];
+        self.bank = [[KLBank alloc] initWithName:@"USER_RATE"];
+    }
+    return self;
+}
+
+- (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate updated:(NSDate *)updateTime {
+    self = [super init];
+    if (self) {
         self.sourceCurrency = sourceCurrency;
         self.destinationCurrency = destinationCurrency;
         self.sellRate = sellRate;

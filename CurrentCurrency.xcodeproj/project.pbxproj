@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0321C4024C84C73E8A558A0B /* libPods-CurrentCurrency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB88E694043199DC88CC327 /* libPods-CurrentCurrency.a */; };
+		82A2D5C61B974DFC002E65D3 /* AddOperationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A2D5C51B974DFC002E65D3 /* AddOperationFormViewController.m */; };
+		82A2D5C91B9755C0002E65D3 /* MyOperationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A2D5C81B9755C0002E65D3 /* MyOperationsTableViewController.m */; };
 		82BCA0D71B3B00AD0025FA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0D61B3B00AD0025FA71 /* main.m */; };
 		82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0D91B3B00AD0025FA71 /* AppDelegate.m */; };
 		82BCA0DD1B3B00AD0025FA71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BCA0DC1B3B00AD0025FA71 /* ViewController.m */; };
@@ -43,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		753BCBF896D6E2E6F97ED3F2 /* Pods-CurrentCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrentCurrency.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrentCurrency/Pods-CurrentCurrency.release.xcconfig"; sourceTree = "<group>"; };
+		82A2D5C41B974DFC002E65D3 /* AddOperationFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOperationFormViewController.h; sourceTree = "<group>"; };
+		82A2D5C51B974DFC002E65D3 /* AddOperationFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOperationFormViewController.m; sourceTree = "<group>"; };
+		82A2D5C71B9755C0002E65D3 /* MyOperationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperationsTableViewController.h; sourceTree = "<group>"; };
+		82A2D5C81B9755C0002E65D3 /* MyOperationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperationsTableViewController.m; sourceTree = "<group>"; };
 		82BCA0D11B3B00AD0025FA71 /* CurrentCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCA0D51B3B00AD0025FA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82BCA0D61B3B00AD0025FA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -248,6 +254,10 @@
 				82CF9A991B8CA40600FF406D /* AddCurrencyTableViewController.m */,
 				82CF9B0D1B94AA3C00FF406D /* BestRatesTableViewController.h */,
 				82CF9B0E1B94AA3C00FF406D /* BestRatesTableViewController.m */,
+				82A2D5C41B974DFC002E65D3 /* AddOperationFormViewController.h */,
+				82A2D5C51B974DFC002E65D3 /* AddOperationFormViewController.m */,
+				82A2D5C71B9755C0002E65D3 /* MyOperationsTableViewController.h */,
+				82A2D5C81B9755C0002E65D3 /* MyOperationsTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A2D5C61B974DFC002E65D3 /* AddOperationFormViewController.m in Sources */,
 				82CF9A9C1B8CAD3700FF406D /* CurrencyConstants.m in Sources */,
 				82BCA10B1B3C2F970025FA71 /* dmMappingProvider.m in Sources */,
 				82BCA0FE1B3C18E10025FA71 /* MyCurrency.m in Sources */,
@@ -404,6 +415,7 @@
 				82CF9A9A1B8CA40600FF406D /* AddCurrencyTableViewController.m in Sources */,
 				82CF9B0C1B94A6A300FF406D /* KLCurrencyAPI.m in Sources */,
 				82BCA1031B3C2EF60025FA71 /* RKXMLReaderSerialization.m in Sources */,
+				82A2D5C91B9755C0002E65D3 /* MyOperationsTableViewController.m in Sources */,
 				82BCA1131B3C33B20025FA71 /* Bank.m in Sources */,
 				82BCA0DA1B3B00AD0025FA71 /* AppDelegate.m in Sources */,
 				82BCA1061B3C2F050025FA71 /* XMLReader.m in Sources */,
