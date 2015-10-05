@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Realm.h>
 
-#import "KLBank.h"
+@class KLBank;
 
 @interface KLRate : RLMObject
 
@@ -20,6 +20,7 @@
 @property double buyRate;
 @property NSDate *updated;
 @property KLBank *bank;
+
 
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency
                         dstCurrency:(NSString *)destinationCurrency

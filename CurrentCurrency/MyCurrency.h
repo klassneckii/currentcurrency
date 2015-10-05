@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KLRate.h"
+
+@class KLRate;
 
 @interface MyCurrency : NSObject
 
-@property (nonatomic) NSNumber *amount;
-@property (nonatomic) KLRate *rate;
-@property (nonatomic) NSDate *created;
+@property NSNumber *amount;
+@property KLRate *rate;
+//@property KLRate *rate;
+@property NSDate *created;
 
 @end

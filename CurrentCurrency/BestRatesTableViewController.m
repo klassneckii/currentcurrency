@@ -11,7 +11,7 @@
 #import "KLCurrencyAPI.h"
 
 #import "KLRate.h"
-
+#import "KLBank.h"
 #import "CurrencyConstants.h"
 
 
@@ -66,20 +66,25 @@ static NSString *cellIdentifier = @"RateCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    KLRate *rate = self.rates[indexPath.row];
+    KLBank *bank = self.rates[indexPath.row];
     
-    
-    NSString *currency;
-    if ([rate.destinationCurrency isEqualToString:kAECurrencyEUR]) {
-        currency = @"EUR";
-    } else if ([rate.destinationCurrency isEqualToString:kAECurrencyUSD]) {
-        currency = @"USD";
-    } else {
-        currency = @"hz";
+    if (bank.rates.count > 0) {
+        KLRate *rate = bank.rates[0];
+        
+        NSString *currency;
+        if ([rate.destinationCurrency isEqualToString:kAECurrencyEUR]) {
+            currency = @"EUR";
+        } else if ([rate.destinationCurrency isEqualToString:kAECurrencyUSD]) {
+            currency = @"USD";
+        } else {
+            currency = @"hz";
+        }
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ | %@", bank.name, currency];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Продать: %.2f, Купить: %.2f", rate.sellRate, rate.buyRate];
     }
+    
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ | %@", rate.bank.name, currency];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Продать: %.2f, Купить: %.2f", rate.sellRate, rate.buyRate];
     
     return cell;
 }

@@ -1,11 +1,12 @@
 PODS:
   - AFNetworking (1.3.4)
   - BKMoneyKit (0.0.5)
-  - CBZSplashView (1.0.0)
-  - ChameleonFramework (1.2.0)
-  - DateTools (1.6.1)
-  - IQKeyboardManager (3.2.4)
-  - ISO8601DateFormatterValueTransformer (0.6.0):
+  - ChameleonFramework (2.0.3):
+    - ChameleonFramework/Default (= 2.0.3)
+  - ChameleonFramework/Default (2.0.3)
+  - DateTools (1.7.0)
+  - IQKeyboardManager (3.3.2)
+  - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
   - MYSForms (0.1.3)
   - ReactiveCocoa (2.5):
@@ -15,36 +16,35 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - Realm (0.94.1):
-    - Realm/Headers (= 0.94.1)
-  - Realm/Headers (0.94.1)
-  - RestKit (0.24.1):
-    - RestKit/Core (= 0.24.1)
-  - RestKit/Core (0.24.1):
+  - Realm (0.95.2):
+    - Realm/Headers (= 0.95.2)
+  - Realm/Headers (0.95.2)
+  - RestKit (0.25.0):
+    - RestKit/Core (= 0.25.0)
+  - RestKit/Core (0.25.0):
     - RestKit/CoreData
     - RestKit/Network
     - RestKit/ObjectMapping
-  - RestKit/CoreData (0.24.1):
+  - RestKit/CoreData (0.25.0):
     - RestKit/ObjectMapping
-  - RestKit/Network (0.24.1):
+  - RestKit/Network (0.25.0):
     - AFNetworking (~> 1.3.0)
     - RestKit/ObjectMapping
     - RestKit/Support
     - SOCKit
-  - RestKit/ObjectMapping (0.24.1):
-    - ISO8601DateFormatterValueTransformer (~> 0.6.0)
+  - RestKit/ObjectMapping (0.25.0):
+    - ISO8601DateFormatterValueTransformer (~> 0.6.1)
     - RestKit/Support
     - RKValueTransformers (~> 1.1.0)
-  - RestKit/Support (0.24.1):
+  - RestKit/Support (0.25.0):
     - TransitionKit (~> 2.1.0)
   - RKValueTransformers (1.1.2)
   - SOCKit (1.1)
   - TransitionKit (2.1.1)
-  - UITextField+Shake (1.0)
+  - UITextField+Shake (1.1.1)
 
 DEPENDENCIES:
   - BKMoneyKit
-  - CBZSplashView (~> 1.0.0)
   - ChameleonFramework
   - DateTools
   - IQKeyboardManager
@@ -57,18 +57,17 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
   BKMoneyKit: acd201075dae1e99d146ea97bf3b756152b519fd
-  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
-  ChameleonFramework: 4d6bf87fcaee176f487176cdccc4229637ec97f0
-  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
-  IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
-  ISO8601DateFormatterValueTransformer: 3ac3a721381697cab4e792d8049ce2f2e9ad3036
+  ChameleonFramework: 31cf675235772b0fb6f43bf76547eafc2d6442ae
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  IQKeyboardManager: d863eb0bca424d1f6dad6bdd1f856af52664add8
+  ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   MYSForms: cf8d277fd16911ed13f42c1f398f72978c7f4386
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  Realm: d999a6cf0b41577a077349c9cc9d496cc62a7d17
-  RestKit: 1987b5efef289c6b27bd980714d6ca48d3871b78
+  Realm: 4c026902041bb39c4bd083ebc5e88f4f17973d72
+  RestKit: a4fcaf3d4bb2c204679856a46d596160bf208095
   RKValueTransformers: 66ac5e4f077fdbe3496e792d89eeff4c3eb67701
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
   TransitionKit: 3a14b6acc7cf2d1dd3e454e24dbad1cfab9a1ef1
-  UITextField+Shake: 61fe6ff0cdbf667618d1e856022940aa7798c3f0
+  UITextField+Shake: 7b54838133d2242b90bd40e24d8de2a50a31964b
 
 COCOAPODS: 0.38.2

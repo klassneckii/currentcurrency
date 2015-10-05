@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/andreamazz/UITextField-Shake.svg)](https://travis-ci.org/andreamazz/UITextField-Shake)
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/v/UITextField+Shake/badge.svg)](http://cocoapods.org/?q=summary%3Auitextfield%20name%3Ashake%2A)
 [![Coverage Status](https://coveralls.io/repos/andreamazz/UITextField-Shake/badge.svg)](https://coveralls.io/r/andreamazz/UITextField-Shake)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 UITextField category that adds a shake animation like the password field of the OsX login screen.
 
@@ -12,15 +13,23 @@ UITextField category that adds a shake animation like the password field of the 
 ![UITextField+Shake](https://raw.githubusercontent.com/andreamazz/UITextField-Shake/master/assets/screenshot.gif)
 
 ##Setup with Cocoapods
-* Add ```pod 'UITextField+Shake'``` to your Podfile
-* Run ```pod install```
-* Run ```open App.xcworkspace```
-* Import ```UITextField+Shake.h``` in your controller's header file
+```
+pod 'UITextField+Shake', '~> 1.1'
+```
+Import ```UITextField+Shake.h``` in your controller's header file, or ```UITextField_Shake``` if you are using the `use_frameworks!` directive.
+
+##Setup with Carthage
+```
+github "andreamazz/UITextField-Shake"
+```
 
 ##Usage
+
+###In Objective-C
+
 ```objc
 // Shake
-[self.textField];
+[[self.textField] shake];
 
 // Shake with the default speed
 [self.textField shake:10   // 10 times
@@ -39,6 +48,31 @@ UITextField category that adds a shake animation like the password field of the 
                 speed:0.03 // 30ms per shake
        shakeDirection:ShakeDirectionVertical
 ];
+```
+
+###In Swift
+
+```swift
+// Shake
+self.textField.shake()
+        
+// Shake with the default speed
+self.textField.shake(10,   // 10 times
+                     withDelta: 5.0    // 5 points wide
+)
+        
+// Shake with a custom speed
+self.textField.shake(10,   // 10 times
+                     withDelta: 5.0,    // 5 points wide
+                     speed: 0.03 // 30ms per shake
+)
+        
+// Shake with a custom speed and direction
+self.textField.shake(10,   // 10 times
+                     withDelta: 5.0,    // 5 points wide
+                     speed: 0.03, // 30ms per shake
+                     shakeDirection: ShakeDirection.Vertical
+)
 ```
 
 ##Completion Handler

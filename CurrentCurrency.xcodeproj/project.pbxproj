@@ -317,7 +317,7 @@
 		82BCA0C91B3B00AD0025FA71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Dmitrii;
 				TargetAttributes = {
 					82BCA0D01B3B00AD0025FA71 = {
@@ -406,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */,
 				82A2D5C61B974DFC002E65D3 /* AddOperationFormViewController.m in Sources */,
 				82CF9A9C1B8CAD3700FF406D /* CurrencyConstants.m in Sources */,
 				82BCA10B1B3C2F970025FA71 /* dmMappingProvider.m in Sources */,
@@ -424,7 +425,6 @@
 				82CF9A8F1B836DFC00FF406D /* KLBank.m in Sources */,
 				82CF9A971B84C45600FF406D /* MyCurrencyRealm.m in Sources */,
 				82CF9B0F1B94AA3C00FF406D /* BestRatesTableViewController.m in Sources */,
-				82CF9A8C1B836D9300FF406D /* KLRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +487,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -555,6 +556,7 @@
 				INFOPLIST_FILE = CurrentCurrency/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lifetags.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -568,6 +570,7 @@
 				INFOPLIST_FILE = CurrentCurrency/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lifetags.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -586,6 +589,7 @@
 				);
 				INFOPLIST_FILE = CurrentCurrencyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lifetags.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrentCurrency.app/CurrentCurrency";
 			};
@@ -601,6 +605,7 @@
 				);
 				INFOPLIST_FILE = CurrentCurrencyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lifetags.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrentCurrency.app/CurrentCurrency";
 			};

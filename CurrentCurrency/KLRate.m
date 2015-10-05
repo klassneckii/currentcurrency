@@ -8,6 +8,8 @@
 
 #import "KLRate.h"
 
+#import "KLBank.h"
+
 @implementation KLRate
 
 - (instancetype)init {
@@ -21,7 +23,7 @@
 }
 
 - (instancetype)initWithSrcCurrency:(NSString *)sourceCurrency dstCurrency:(NSString *)destinationCurrency sellRate:(double)sellRate buyRate:(double)buyRate updated:(NSDate *)updateTime {
-    self = [super init];
+    self = [self init];
     if (self) {
         self.sourceCurrency = sourceCurrency;
         self.destinationCurrency = destinationCurrency;
@@ -49,7 +51,9 @@
 
 //+ (NSDictionary *)defaultPropertyValues
 //{
-//    return @{};
+//    return @{
+//             @"updated" : [NSDate new]
+//             };
 //}
 
 // Specify properties to ignore (Realm won't persist these)

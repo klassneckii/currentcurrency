@@ -13,6 +13,9 @@
 #import "KLRate.h"
 #import "Bank.h"
 
+#import "KLBank.h"
+
+
 #import "CurrencyConstants.h"
 
 @implementation KLCurrencyAPI
@@ -39,23 +42,26 @@
     
     for (Bank *badRate in horribleRates) {
         
+        KLBank *bank = [KLBank new];
+        bank.name = badRate.name;
+        
         KLRate *rubUSDRate = [[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
                                                       dstCurrency:kAECurrencyUSD
                                                          sellRate:badRate.usdSell.doubleValue
                                                           buyRate:badRate.usdBuy.doubleValue
-                                                         updated:badRate.changeTime
-                                                             bank:[[KLBank alloc] initWithName:badRate.name]
-                              
-                              ];
-        [newRates addObject:rubUSDRate];
+                                                         updated:badRate.changeTime];
+//        [newRates addObject:rubUSDRate];
         
         KLRate *rubEURRate = [[KLRate alloc] initWithSrcCurrency:kAECurrencyRUB
                                                       dstCurrency:kAECurrencyEUR
                                                          sellRate:badRate.euroSell.doubleValue
                                                           buyRate:badRate.euroBuy.doubleValue
-                                                         updated:badRate.changeTime
-                                                             bank:[[KLBank alloc] initWithName:badRate.name]];
-        [newRates addObject:rubEURRate];
+                                                         updated:badRate.changeTime];
+//        [newRates addObject:rubEURRate];
+        [bank.rates addObject:rubUSDRate];
+        [bank.rates addObject:rubEURRate];
+        
+        [newRates addObject:bank];
     }
     
     return [newRates mutableCopy];
@@ -66,8 +72,8 @@
 - (void)saveRatesToRealm:(NSArray *)rates {
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm beginWriteTransaction];
-    for (KLRate *rate in rates) {
-        [KLRate createInRealm:realm withValue:rate];
+    for (KLBank *rate in rates) {
+        [KLBank createInRealm:realm withValue:rate];
 //        [KLRate createOrUpdateInRealm:realm withValue:rate];
     }
     [realm commitWriteTransaction];
@@ -76,17 +82,17 @@
 - (RLMResults *)getTodayRatesFromDB {
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
-    [comps setDay:1];
-    [comps setMonth:9];
+    [comps setDay:4];
+    [comps setMonth:10];
     [comps setYear:2015];
     [comps setHour:18];
 //    self.timestamp = [[NSCalendar currentCalendar] dateFromComponents:comps];
     // Query using an NSPredicate
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"updated > %@", [[NSCalendar currentCalendar] dateFromComponents:comps]];
+//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"rates[0].updated > %@", [[NSCalendar currentCalendar] dateFromComponents:comps]];
 //    tanDogs = [Dog objectsWithPredicate:pred];
     
     
-    return [KLRate objectsWithPredicate:pred];
+    return [KLBank allObjects];
 }
 
 

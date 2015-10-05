@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <Realm.h>
+#import <Realm.h>
+
+@class KLRate;
+#import "KLRate.h"
 
 @interface KLBank : RLMObject
 
-@property (nonatomic) NSString *name;
-//@property (nonatomic) NSString *address; 
-
 - (instancetype)initWithName:(NSString *)name;
 
-@end
+@property NSString *name;
+@property RLMArray<KLRate *><KLRate> *rates;
 
+@end
 

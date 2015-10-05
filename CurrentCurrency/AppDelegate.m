@@ -21,7 +21,7 @@
     
     
     // Ensure we start with an empty database
-//    [[NSFileManager defaultManager] removeItemAtPath:[RLMRealm defaultRealmPath] error:nil];
+    [[NSFileManager defaultManager] removeItemAtPath:[RLMRealm defaultRealmPath] error:nil];
     
     return YES;
 }
